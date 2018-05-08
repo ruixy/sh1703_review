@@ -1,0 +1,22 @@
+<!doctyple htm>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>演示hello</title>
+    </head>
+    <body>
+        <p>hello world</p>
+        <table border="1">
+            <tr>
+                <th>id</th>
+                <th>name</th>
+            </tr>
+            {% for obj in arr %}
+                <tr>
+                    <td>{{ obj.id }}</td>
+                    <td>{{ obj.name }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+<html>
